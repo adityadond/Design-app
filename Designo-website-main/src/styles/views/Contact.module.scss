@@ -1,0 +1,167 @@
+.bannerArea {
+  max-width: 1200px;
+  margin: auto;
+
+  &__content {
+    padding: 7.4rem 24px;
+    background: url('/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg') no-repeat, var(--color-peach);
+    background-position: 23% top;
+    background-size: 250%;
+    display: grid;
+
+    @media screen and (min-width: 650px) {
+      margin: 0 24px;
+      padding: 7.1rem 58px;
+      border-radius: 1.5rem;
+      background: url('/assets/contact/desktop/bg-pattern-hero-desktop.svg') no-repeat, var(--color-peach);
+      background-position: -180px -100px;
+      background-size: 690px;
+    }
+
+    @media screen and (min-width: 760px) {
+      margin: 0 40px;
+    }
+
+    @media screen and (min-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 7rem;
+      padding: 5.1rem 9.4rem 5.8rem;
+      background-position: 0px -143px;
+      background-size: 650px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      margin: 0;
+    }
+  }
+
+  &__textArea {
+    text-align: center;
+    margin-bottom: 4.8rem;
+
+    @media screen and (min-width: 650px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1000px) {
+      align-self: center;
+    }
+
+    h1 {
+      margin-bottom: 2.4rem;
+
+      @media screen and (min-width: 650px) {
+        margin-bottom: 3.2rem;
+      }
+    }
+
+    p {
+      max-width: 50ch;
+      margin: auto;
+
+      @media screen and (min-width: 650px) {
+        margin: 0;
+        max-width: 57ch;
+      }
+    }
+  }
+
+  &__formArea {
+    display: grid;
+    gap: 2.1rem;
+
+    .inputBlock {
+      position: relative;
+
+      input {
+        min-height: 5rem;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: var(--color-white);
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid var(--color-white);
+        padding: 0 1.7rem;
+  
+        &::-webkit-input-placeholder {
+          font-weight: 500;
+          font-size: 1.5rem;
+          color: var(--color-white);
+          text-transform: capitalize;
+          opacity: 0.6;
+        }
+
+        &:focus {
+          outline: dashed 2px var(--color-white);
+        }
+      }
+
+      span {
+        font-size: 1.3rem;
+        color: var(--color-white);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        font-style: italic;
+        line-height: 2.6rem;
+
+        &.messageError {
+          bottom: 0;
+          top: unset;
+        }
+
+        img {
+          margin-left: 0.8rem;
+        }
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 10rem;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--color-white); 
+      padding: 0 1.7rem;
+      font-size: 1.6rem;
+      color: var(--color-white);
+      width: 100%;
+
+      &:focus {
+        outline: dashed 2px var(--color-white);
+      }
+
+      &::-webkit-input-placeholder {
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--color-white);
+        text-transform: capitalize;
+        opacity: 0.6;
+      }
+    }
+
+    button {
+      height: 5.6rem;
+      width: 15.2rem;
+      margin: 1.9rem auto 0;
+
+      @media screen and (min-width: 650px) {
+        margin: 0.3rem 0 0 auto;
+      }
+    }
+  }
+}
+
+.locationsArea {
+  margin: 12rem 0; 
+
+  @media screen and (min-width: 1000px) {
+    margin: 16rem 0;
+  }
+}

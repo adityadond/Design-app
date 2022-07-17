@@ -1,0 +1,28 @@
+.mainContainer {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 12rem;
+
+  @media screen and (min-width: 900px) {
+    margin-bottom: 16rem;
+  }
+
+  @media screen and (min-width: 650px) {
+    padding: 0 35px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
+
+  .cardsArea {  
+
+    &__list {
+      list-style: none;
+    }
+  
+    &__mobileCards {
+      display: grid;
+    }
+  }
+}
